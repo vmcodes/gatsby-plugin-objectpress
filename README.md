@@ -1,4 +1,4 @@
-# @vmcodes/auto-completer
+# gatsby-plugin-objectpress
 
 ### Getting Started
 
