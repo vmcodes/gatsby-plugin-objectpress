@@ -1,0 +1,21 @@
+{
+  "name": "gatsby-plugin-objectpress",
+  "version": "0.1.0",
+  "description": "gatsby source plugin for object press",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/objectpress/gatsby-plugin-objectpress.git"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "object press"
+  ],
+  "author": "Object Press <hello@objectpress.io>",
+  "license": "MIT",
+  "private": false,
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.3"
+  }
+}
