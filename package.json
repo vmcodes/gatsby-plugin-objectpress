@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-objectpress",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "gatsby source plugin for object press",
   "repository": {
     "type": "git",
