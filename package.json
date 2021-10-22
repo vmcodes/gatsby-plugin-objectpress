@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-objectpress",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "gatsby source plugin for object press",
   "repository": {
     "type": "git",
@@ -16,6 +16,6 @@
   "private": false,
   "main": "index.js",
   "dependencies": {
-    "axios": "^0.21.3"
+    "axios": "^0.21.4"
   }
 }

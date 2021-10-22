@@ -13,20 +13,20 @@ exports.sourceNodes = async (
   const { createNode } = actions;
 
   // Object Press credentials
-  const creds = {
-    scan: `apps`,
+  const options = {
+    production: pluginOptions?.production !== false ? true : false,
     appSecret: pluginOptions.appSecret,
     userSecret: pluginOptions.userSecret,
   };
 
   // call the external API endpoint to get all posts
-  const response = await axios.post(`https://v2.objectpress.io/content`, creds);
+  const response = await axios.post(`https://v2.objectpress.io/posts`, options);
 
   // gather the response data
   const content = await response.data;
 
   // loop through data and create Gatsby nodes
-  content.body.forEach((post) =>
+  content.body.forEach((post) => {
     createNode({
       id: createNodeId(`${POST_NODE_TYPE}-${post.title}`),
       ...post,
@@ -35,7 +35,7 @@ exports.sourceNodes = async (
         content: JSON.stringify(post),
         contentDigest: createContentDigest(post),
       },
-    })
-  );
+    });
+  });
   return;
 };
