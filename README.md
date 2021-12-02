@@ -6,7 +6,7 @@ npm i gatsby-plugin-objectpress
 
 ### [Demo](https://gatsby.objectpress.io)
 
-### Basic Usage
+### Basic usage
 
 ```javascript
 module.exports = {
