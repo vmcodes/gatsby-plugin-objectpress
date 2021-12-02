@@ -12,7 +12,7 @@ npm i gatsby-plugin-objectpress
 module.exports = {
   plugins: [
     /*  Loads the source-plugin and adds credentials.
-     *  Production is enabled as 'true' by default, but this can be modified explicity
+     *  Production is enabled as 'true' by default, but this can be modified
      *  to additionally display pending post by setting production to 'false'.
      *  Sort is set to 'true' and 'publishDesc' (publishAt descending) by default.
      *  Options include: publishDesc, publishAsc, titleDesc, and titleAsc.
@@ -29,4 +29,32 @@ module.exports = {
     },
   ],
 };
+```
+
+### Payload
+
+```javascript
+{
+  "statusCode": 200,
+  "body": [
+    {
+      "title": "",
+      "publishAt": "",
+      "content": "",
+      "pageTitle": "",
+      "slug": "",
+      "keywords": "",
+      "description": "",
+      "images": [
+        ""
+      ],
+      "altTags": [
+        ""
+      ]
+    },
+  ],
+  "headers": {
+    "Content-Type": "application/json"
+  }
+}
 ```
