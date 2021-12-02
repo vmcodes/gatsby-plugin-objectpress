@@ -14,7 +14,7 @@ module.exports = {
     /*  Loads the source-plugin and adds credentials.
      *  Production is enabled as 'true' by default, but this can be modified explicity
      *  to additionally display pending post by setting production to 'false'.
-     *  Sort is set to true and publishDesc (publishAt descending).
+     *  Sort is set to 'true' and 'publishDesc' (publishAt descending) by default.
      *  Options include: publishDesc, publishAsc, titleDesc, and titleAsc.
      */
     {
