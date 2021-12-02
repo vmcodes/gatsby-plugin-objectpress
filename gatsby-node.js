@@ -12,9 +12,14 @@ exports.sourceNodes = async (
 ) => {
   const { createNode } = actions;
 
-  // Object Press credentials
+  // plugin options
   const options = {
     production: pluginOptions?.production !== false ? true : false,
+    sort: pluginOptions?.production !== false ? true : false,
+    sortType:
+      pluginOptions?.sortType !== "publishDesc"
+        ? pluginOptions?.sortType
+        : "publishDesc",
     appSecret: pluginOptions.appSecret,
     userSecret: pluginOptions.userSecret,
   };
