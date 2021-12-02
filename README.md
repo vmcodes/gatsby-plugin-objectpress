@@ -31,30 +31,24 @@ module.exports = {
 };
 ```
 
-### Payload
+### Graphql to query for payload
 
 ```javascript
-{
-  "statusCode": 200,
-  "body": [
-    {
-      "title": "",
-      "publishAt": "",
-      "content": "",
-      "pageTitle": "",
-      "slug": "",
-      "keywords": "",
-      "description": "",
-      "images": [
-        ""
-      ],
-      "altTags": [
-        ""
-      ]
-    },
-  ],
-  "headers": {
-    "Content-Type": "application/json"
+const { data } = await graphql(`
+  query Post {
+    allPost {
+      nodes {
+        title
+        publishAt
+        pageTitle
+        slug
+        content
+        description
+        keywords
+        images
+        altTags
+      }
+    }
   }
-}
+`);
 ```
